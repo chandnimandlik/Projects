@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Tom Cruize",
+    "img": "images/tom-cruise.jpg",
+    "description": "Tom Cruise (born Thomas Cruise Mapother IV; July 3, 1962) is an American actor and filmmaker. Cruise has been nominated for three Academy Awards and has won three Golden Globe Awards. He started his career at age 19 in the 1981 film Endless Love. After portraying supporting roles in Taps (1981) and The Outsiders (1983), his first leading role was in the romantic comedy Risky Business, released in August 1983. Cruise became a full-fledged movie star after starring as Pete 'Maverick' Mitchell in the action drama Top Gun (1986). Since 1996, Cruise has been well known for his role as secret agent Ethan Hunt in the Mission: Impossible film series, whose most recent film, Mission: Impossible – Rogue Nation, was released in 2015.",
+    "order": 1
+  },
+  {
+    "name": "Kate Winslet",
+    "img": "images/kate-winslet.jpg",
+    "description": "Kate Elizabeth Winslet, CBE (born 5 October 1975), is an English actress and singer. She is the recipient of an Academy Award, an Emmy Award, four Golden Globe Awards, a Grammy Award, and three BAFTA Awards. She is the youngest person to receive six Academy Award nominations with seven nominations in total, and is one of the few actresses to win three of the four major American entertainment awards (EGOT).[1][2] In addition, she has won awards from the Screen Actors Guild, British Academy of Film and Television Arts, and the Hollywood Foreign Press Association among others, and an Honorary César Award in 2012.",
+    "order": 2
+  }
+]

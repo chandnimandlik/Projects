@@ -1,0 +1,59 @@
+/*
+================================
+Version:  1.0
+Author:   Chandni Mandlik
+================================
+*/
+
+/*Core variables and mixins*/
+@import "_variables";
+@import "_mixin";
+
+
+/*General*/
+body{
+	font-family: @fontfamily;
+	font-size: 14px;
+    color: lighten(@black, 4%);
+}
+
+.container-fluid{
+	.container{
+		min-height: 280px;
+		border: 1px solid darken(@white, 10%);
+		padding: 0;
+		margin: 15px 0 0;
+		width: 100%;
+		display: flex;
+
+		.side-navigation{
+			background: darken(@white, 15%);
+			padding: 0;
+
+			ul{
+				li{
+					padding: 10px 15px;
+					border-bottom: 1px solid darken(@white, 10%);
+                    cursor: pointer;
+                    .transition(all, 100ms, ease);
+
+                    &:hover, &.active{
+                        background: @white;
+                    }
+				}
+			}
+		}
+
+		.bio{
+			padding: 15px;
+			margine-bottom: 100px;
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+// Responsive import
+@import "_responsive";

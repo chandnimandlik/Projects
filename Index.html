@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="cbaApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>CBA | Chandni Mandlik</title>
+	<meta name="keywords" content="cba test chandni mandlik" />
+	<meta name="description" content="This is sample Technical test only for CBA. Do not use this for commercial purpose.">
+	<meta name="author" content="Chandni Mandlik CBA">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+
+<body ng-controller="cbaCtrl as profile" ng-cloak>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="col-lg-2 col-xs-5 side-navigation">
+				<ul class="nav" data-ng-init="profile.tab=1">
+					<li data-ng-repeat="item in profile.data" ng-click="select($index); profile.tab = item.order" ng-class="{'active': $index == selected}">
+						<span ng-click="profile.tab = item.order">{{item.name}}</span>
+					</li>
+				<ul>
+			</div>
+			<div class="col-lg-10 col-xs-7 bio" data-ng-repeat="item in profile.data" data-ng-if="profile.tab === item.order">
+				<div class="col-lg-2">
+					<img data-ng-src="{{item.img}}">
+				</div>
+				<div class="text col-lg-10">
+					<p>{{item.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
