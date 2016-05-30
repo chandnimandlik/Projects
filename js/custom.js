@@ -1,8 +1,8 @@
 'use strict';
 
-var app = angular.module('cbaApp', []);
+var app = angular.module('myApp', []);
 
-app.controller('cbaCtrl', ['$scope', '$http',
+app.controller('myCtrl', ['$scope', '$http',
     function($scope, $http) {
 
         // Gets JSON data
